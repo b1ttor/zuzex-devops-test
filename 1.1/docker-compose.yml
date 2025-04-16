@@ -41,3 +41,5 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+    environment: 
+        PMA_HOST: mysql
